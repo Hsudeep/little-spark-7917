@@ -1,10 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+// import Test from "./Components/Test";
+import AllRoutes from "./Routing/AllRoutes";
 
 function App() {
   return (
-    <div className="App">
-      <h1>IN PROGRESS</h1>
+    <div>
+      <AllRoutes />
+      {/* <Test/> */}
     </div>
   );
 }
