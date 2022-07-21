@@ -38,7 +38,7 @@ const Footer = () => {
     "Modern Slavery Statement",
   ];
   return (
-    <Box borderTop="1px solid #333333" padding="20px 20px">
+    <Box marginTop="5%" borderTop="1px solid #333333" padding="20px 20px">
       <Flex justifyContent="space-between">
         {/* MainBox1 */}
         <Box width="40%">

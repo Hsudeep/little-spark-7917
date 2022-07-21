@@ -45,7 +45,6 @@ const Navbar = () => {
       text: "FREE US Shipping Over $49",
     },
   ];
-
   return (
     <Box color="#333333">
       {/* Navbar Top */}
@@ -93,17 +92,19 @@ const Navbar = () => {
                   <Box fontSize="28px">
                     <ManageAccountsOutlinedIcon fontSize="inherit" />
                   </Box>
-                  <Text fontSize="20px">Account</Text>
+                  <Text fontSize="20px">
+                    <NavLink to="/signup">Account</NavLink>
+                  </Text>
                 </Flex>
               </Box>
               <Box>
                 <NavLink to="/cart">
-                <Flex gap="10%">
-                  <Box fontSize="28px">
-                    <ShoppingCartOutlinedIcon fontSize="inherit" />
-                  </Box>
-                  <Text fontSize="20px">Cart</Text>
-                </Flex>
+                  <Flex gap="10%">
+                    <Box fontSize="28px">
+                      <ShoppingCartOutlinedIcon fontSize="inherit" />
+                    </Box>
+                    <Text fontSize="20px">Cart</Text>
+                  </Flex>
                 </NavLink>
               </Box>
             </Flex>
