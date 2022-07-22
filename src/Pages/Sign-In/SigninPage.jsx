@@ -9,15 +9,48 @@ import {
   Image,
   Input,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import GoogleIcon from "@mui/icons-material/Google";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 const SigninPage = () => {
+  const toast = useToast();
+  const navigate = useNavigate();
+
+  const [loginData, setloginData] = useState({});
+
+  const handleChange = (e) => {
+    let { name, value } = e.target;
+
+    setloginData({
+      ...loginData,
+      [name]: value,
+    });
+  };
+
+  const handleLoginClick = (e) => {
+    e.preventDefault();
+    localStorage.setItem("name", "Sudeep");
+    console.log(loginData);
+
+    toast({
+      title: "Login Succesfull",
+      status: "success",
+      duration: 9000,
+      isClosable: true,
+    });
+
+    setInterval(() => {
+      navigate("/");
+    }, 1000);
+  };
   return (
     <Box>
       {/* Box1 */}
       <Box height="10%" width="20%">
-        <Image
+        <Image onClick={()=>navigate("/")}
           src="https://seeklogo.com/images/S/skinstore-logo-5281C41BD3-seeklogo.com.png"
           alt="Logo"
         />
@@ -38,9 +71,17 @@ const SigninPage = () => {
             </Text>
             <FormControl>
               <FormLabel marginBottom="3%">*Email address</FormLabel>
-              <Input marginBottom="3%" border="1px solid grey" type="email" />
+              <Input
+                name="email"
+                onChange={handleChange}
+                marginBottom="3%"
+                border="1px solid grey"
+                type="email"
+              />
               <FormLabel marginBottom="3%">*Password</FormLabel>
               <Input
+                name="password"
+                onChange={handleChange}
                 marginBottom="3%"
                 border="1px solid grey"
                 type="password"
@@ -49,6 +90,7 @@ const SigninPage = () => {
                 FORGOTTEN YOUR PASSWORD?
               </FormHelperText>
               <Button
+                onClick={handleLoginClick}
                 width="100%"
                 background="#333333"
                 borderRadius="none"

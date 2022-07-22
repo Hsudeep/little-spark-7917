@@ -19,12 +19,15 @@ import ProductWithStar from "../../Components/ProductWithStar";
 const HomePage = () => {
   const images = [
     {
+      id: 1,
       url: "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/04/0712-STDCRE-38046-SS-MH-Photography-July-22-REMAINING-BATCHING-Shot2-1180x450-021804.png",
     },
     {
+      id: 2,
       url: "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/16/0701-STDCRE-38244-SS-BME-Skinstore-July-4-Assets-Shot_01-1180x450-095516.jpg",
     },
     {
+      id: 3,
       url: "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/38/1180x450-082838.jpg",
     },
   ];
@@ -82,26 +85,32 @@ const HomePage = () => {
 
   const categoryPart = [
     {
+      id: 1,
       image:
         "https://static.thcdn.com/images/small/webp/widgets/121-us/01/Page-001-025201.png",
     },
     {
+      id: 2,
       image:
         "https://static.thcdn.com/images/small/webp/widgets/121-us/09/Page-002-025209.png",
     },
     {
+      id: 3,
       image:
         "https://static.thcdn.com/images/small/webp/widgets/121-us/17/Page-003-025217.png",
     },
     {
+      id: 4,
       image:
         "https://static.thcdn.com/images/small/webp/widgets/121-us/21/Page-004-025221.png",
     },
     {
+      id: 5,
       image:
         "https://static.thcdn.com/images/small/webp/widgets/121-us/40/Page-005-025240.png",
     },
     {
+      id: 6,
       image:
         "https://static.thcdn.com/images/small/webp/widgets/121-us/58/Page-006-025258.png",
     },
@@ -215,18 +224,21 @@ const HomePage = () => {
 
   const Blog = [
     {
+      id: 1,
       image:
         "https://static.thcdn.com/images/small/webp/widgets/121-us/10/original-0328-STDCRE-33849-WC-SS-April-Photography-Batching-Shot07-500x500-030310.jpg",
       head: "SkinCeuticals: Vitamin C Beyond the Face",
       desc: "SkinCeuticals believes in celebrating the skin-protective and rejuvenating powers of vitamin C every day, but this year they’re making sure your eyes and lips get in on the antioxidant action (and benefits).",
     },
     {
+      id: 2,
       image:
         "https://static.thcdn.com/images/small/webp/widgets/121-us/51/original-0224-STDCRE-32153-SS-BME-Skinstore-March-2022-Photography-Batching-Shot_13-500x500-023351.jpg",
       head: "Which TriPollar Device is Right for You?",
       desc: "In 2008, TriPollar launched themselves into the home beauty sphere with an aim to innovate the technology behind at-home treatments and devices.",
     },
     {
+      id: 3,
       image:
         "https://static.thcdn.com/images/small/webp/widgets/121-us/53/2004_THG0034749_SS_MAY_2022_SHOT_33_MAIN-071653.jpg",
       head: "The HairStore at SkinStore: What Your Routine Needs",
@@ -300,6 +312,7 @@ const HomePage = () => {
               {categoryPart.map((elem) => (
                 <Link to="/skincare">
                   <Image
+                    key={elem.id}
                     _hover={{ opacity: "10" }}
                     opacity="0.7"
                     src={elem.image}

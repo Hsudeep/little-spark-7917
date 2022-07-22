@@ -13,17 +13,44 @@ import {
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import GoogleIcon from "@mui/icons-material/Google";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useToast } from "@chakra-ui/react";
 const SignupPage = () => {
   const navigate = useNavigate();
+  const toast = useToast();
+  const [signupData, setsignupData] = useState({});
 
-  const singupClick = () => {
-    navigate("/signin");
+  const handleSignupData = (e) => {
+    let { name, value } = e.target;
+
+    setsignupData({
+      ...signupData,
+      [name]: value,
+    });
+  };
+
+  const handleSignupClick = (e) => {
+    e.preventDefault();
+    // localStorage.setItem(signupData);
+    console.log(signupData);
+    toast({
+      title: "Account created.",
+      description: "We've created your account for you.",
+      status: "success",
+      duration: 9000,
+      isClosable: true,
+    });
+
+    setInterval(() => {
+      navigate("/signin");
+    }, 1000);
   };
   return (
     <Box>
       {/* Box1 */}
       <Box height="10%" width="20%">
         <Image
+          onClick={() => navigate("/")}
           src="https://seeklogo.com/images/S/skinstore-logo-5281C41BD3-seeklogo.com.png"
           alt="Logo"
         />
@@ -88,13 +115,27 @@ const SignupPage = () => {
             </Text>
             <FormControl>
               <FormLabel marginBottom="3%">*Full Name</FormLabel>
-              <Input marginBottom="3%" border="1px solid grey" type="name" />
+              <Input
+                name="fullName"
+                onChange={handleSignupData}
+                marginBottom="3%"
+                border="1px solid grey"
+                type="name"
+              />
               <FormLabel marginBottom="3%">*Email address</FormLabel>
-              <Input marginBottom="3%" border="1px solid grey" type="email" />
+              <Input
+                name="email"
+                onChange={handleSignupData}
+                marginBottom="3%"
+                border="1px solid grey"
+                type="email"
+              />
               <FormLabel marginBottom="3%">*Confirm Email address</FormLabel>
               <Input marginBottom="3%" border="1px solid grey" type="email" />
               <FormLabel marginBottom="3%">*Password</FormLabel>
               <Input
+                name="password"
+                onChange={handleSignupData}
                 marginBottom="3%"
                 border="1px solid grey"
                 type="password"
@@ -136,7 +177,7 @@ const SignupPage = () => {
               </Box>
 
               <Button
-                onClick={singupClick}
+                onClick={handleSignupClick}
                 width="100%"
                 background="#333333"
                 borderRadius="none"

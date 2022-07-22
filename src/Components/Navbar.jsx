@@ -15,7 +15,7 @@ import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import AssignmentTurnedInOutlinedIcon from "@mui/icons-material/AssignmentTurnedInOutlined";
 import StayCurrentPortraitOutlinedIcon from "@mui/icons-material/StayCurrentPortraitOutlined";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const pages = [
     { to: "/skincare", pagesLink: "Brands" },
@@ -45,6 +45,8 @@ const Navbar = () => {
       text: "FREE US Shipping Over $49",
     },
   ];
+
+  const navigate = useNavigate();
   return (
     <Box color="#333333">
       {/* Navbar Top */}
@@ -52,6 +54,7 @@ const Navbar = () => {
         <Flex justifyContent="space-between">
           <Box>
             <Image
+              onClick={() => navigate("/")}
               width="65%"
               src="https://seeklogo.com/images/S/skinstore-logo-5281C41BD3-seeklogo.com.png"
               alt="Logo"
@@ -70,14 +73,11 @@ const Navbar = () => {
                 width="100%"
                 placeholder="Search for a product or a brand"
               />
-              <Spacer />
               <Button
                 _hover={{ bgColor: "none" }}
                 borderRadius="none"
-                borderBlockStartColor="black"
-                borderBlockEndColor="black"
-                borderRightColor="black"
-                bgColor="none"
+                bgColor="white"
+                border="1px solid black"
               >
                 <SearchIcon />
               </Button>
@@ -154,8 +154,10 @@ const Navbar = () => {
         textAlign="center"
         marginTop="10px"
         background="#333333"
+        color="white"
+        _hover={{bgColor: "white", color: "black"}}
       >
-        <Text color="white" fontWeight="600" fontSize="20px">
+        <Text   fontWeight="600" fontSize="20px">
           15% off with code SS15 + 12-Piece Beauty Bag (Worth $104) @ $150 |
           Shop now
         </Text>
