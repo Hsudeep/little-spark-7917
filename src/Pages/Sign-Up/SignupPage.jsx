@@ -41,7 +41,7 @@ const SignupPage = () => {
       isClosable: true,
     });
 
-    setInterval(() => {
+    setTimeout(() => {
       navigate("/signin");
     }, 1000);
   };

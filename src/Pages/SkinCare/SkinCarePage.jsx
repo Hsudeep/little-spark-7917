@@ -7,18 +7,22 @@ import {
   Select,
   SimpleGrid,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 import ProductWithStar from "../../Components/ProductWithStar";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import { getData, setCartData } from "../axiosApi";
+import SkinCareLeftFilters from "./SkinCareLeftFilters";
+import SkinCareProducts from "./SkinCareProducts";
+import SkincareFormatFilter from "./SkincareFormatFilter";
 const SkinCarePage = () => {
   const [page, setPage] = useState(1);
   const [sorting, setsorting] = useState("asc");
-
+  const toast = useToast();
   const handleOrder = (e) => {
     setsorting(e.target.value);
-    console.log(sorting)
+    console.log(sorting);
   };
   const [beta, setBeta] = useState([]);
 
@@ -33,7 +37,9 @@ const SkinCarePage = () => {
     productName,
     productOffer,
     productPrice,
-    id
+    id,
+    count,
+    subTotal
   ) => {
     setCartData({
       productImage,
@@ -41,7 +47,16 @@ const SkinCarePage = () => {
       productOffer,
       productPrice,
       id,
+      count,
+      subTotal,
     }).then(() => productData());
+
+    toast({
+      title: "Item Added to Cart",
+      status: "success",
+      duration: 4000,
+      isClosable: true,
+    });
   };
   useState(() => {
     productData(page);
@@ -56,7 +71,26 @@ const SkinCarePage = () => {
       <Box padding="10px 10px">
         <Flex gap="2%">
           {/* Box1 */}
-          <Box border="1px solid" width="40%"></Box>
+          <Box padding="10px 10px" width="40%">
+            <Box marginBottom="5%">
+              <SkinCareLeftFilters />
+            </Box>
+            <Box marginBottom="5%">
+              <SkincareFormatFilter />
+            </Box>
+            <Box marginBottom="5%">
+              <SkinCareProducts />
+            </Box>
+            <Box marginBottom="5%">
+              <SkinCareLeftFilters />
+            </Box>
+            <Box marginBottom="5%">
+              <SkinCareProducts />
+            </Box>
+            <Box marginBottom="5%">
+              <SkincareFormatFilter />
+            </Box>
+          </Box>
           {/* Box2 */}
           <Box>
             {/* Top BOx 1 */}
@@ -114,7 +148,7 @@ const SkinCarePage = () => {
                     <Button
                       disabled={page === 1}
                       onClick={() => {
-                        setPage(page - 1) 
+                        setPage(page - 1);
                         productData(page);
                       }}
                       bgColor="white"
@@ -141,8 +175,9 @@ const SkinCarePage = () => {
                       </Text>
                     </Box>
                     <Button
-                      onClick={() => {setPage(page + 1)
-                      productData(page)
+                      onClick={() => {
+                        setPage(page + 1);
+                        productData(page);
                       }}
                       bgColor="white"
                       borderRadius="none"
@@ -170,6 +205,8 @@ const SkinCarePage = () => {
                     off={e.productOffer}
                     id={e.id}
                     price={e.productPrice}
+                    count={1}
+                    subTotal={e.productPrice}
                     handleAddCartData={handleAddCartData}
                   />
                 ))}

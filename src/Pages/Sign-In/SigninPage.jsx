@@ -30,11 +30,8 @@ const SigninPage = () => {
     });
   };
 
-  const handleLoginClick = (e) => {
-    e.preventDefault();
+  const handleLoginClick = () => {
     localStorage.setItem("name", "Sudeep");
-    console.log(loginData);
-
     toast({
       title: "Login Succesfull",
       status: "success",
@@ -42,7 +39,7 @@ const SigninPage = () => {
       isClosable: true,
     });
 
-    setInterval(() => {
+    setTimeout(() => {
       navigate("/");
     }, 1000);
   };
@@ -50,7 +47,8 @@ const SigninPage = () => {
     <Box>
       {/* Box1 */}
       <Box height="10%" width="20%">
-        <Image onClick={()=>navigate("/")}
+        <Image
+          onClick={() => navigate("/")}
           src="https://seeklogo.com/images/S/skinstore-logo-5281C41BD3-seeklogo.com.png"
           alt="Logo"
         />
