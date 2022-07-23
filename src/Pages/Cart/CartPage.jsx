@@ -12,7 +12,12 @@ import {
 import React from "react";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { useState } from "react";
-import { getCartData } from "../axiosApi";
+import {
+  CountDecrement,
+  CountIncrement,
+  deleteCartData,
+  getCartData,
+} from "../axiosApi";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
@@ -26,12 +31,53 @@ const CartPage = () => {
       .catch((e) => console.log(e));
   };
 
+  const handleCartDataDelete = (id) => {
+    deleteCartData(id).then(() => cartData());
+  };
+
   useEffect(() => {
     cartData();
   }, []);
+
+  let TotalPrice = 0;
+  data.map((e) => {
+    return (TotalPrice += e.subTotal);
+  });
+
+  const setTotalAmount = () => {
+    navigate("/checkout");
+  };
+
+  const incrementCount = (data) => {
+    const updateData = {
+      productImage: data.productImage,
+      productName: data.productName,
+      productOffer: data.productOffer,
+      productPrice: data.productPrice,
+      id: data.id,
+      count: data.count + 1,
+      subTotal: data.productPrice * data.count,
+    };
+
+    CountIncrement(updateData).then(() => cartData());
+  };
+
+  const decrementCount = (data) => {
+    const updateData = {
+      productImage: data.productImage,
+      productName: data.productName,
+      productOffer: data.productOffer,
+      productPrice: data.productPrice,
+      id: data.id,
+      count: data.count - 1,
+      subTotal: data.productPrice * data.count,
+    };
+
+    CountDecrement(updateData).then((r) => cartData());
+  };
   return (
     <Box>
-      <Navbar/>
+      <Navbar />
       <Box margin="3%" padding="20px 20px">
         {/* <TOP></TOP> */}
         <Box>
@@ -99,6 +145,8 @@ const CartPage = () => {
                       <Box>
                         <Flex gap="10%">
                           <Button
+                            disabled={e.count === 1}
+                            onClick={() => decrementCount(e)}
                             borderRadius="none"
                             bgColor="#ebebeb"
                             fontSize="20px"
@@ -107,8 +155,9 @@ const CartPage = () => {
                           >
                             -
                           </Button>
-                          <Text>1</Text>
+                          <Text>{e.count}</Text>
                           <Button
+                            onClick={() => incrementCount(e)}
                             bgColor="#ebebeb"
                             borderRadius="none"
                             fontSize="20px"
@@ -126,14 +175,19 @@ const CartPage = () => {
                     {/* <Sutotal></Sutotal> */}
 
                     <Td>
-                      <Text fontWeight="500">${e.productPrice}</Text>
+                      <Text fontWeight="500">${e.subTotal}</Text>
                     </Td>
 
                     {/* <Sutotal></Sutotal> */}
 
                     {/* <Delete></Delete> */}
                     <Td>
-                      <Button borderRadius="50%">X</Button>
+                      <Button
+                        onClick={() => handleCartDataDelete(e.id)}
+                        borderRadius="50%"
+                      >
+                        X
+                      </Button>
                     </Td>
                     {/* <Delete></Delete> */}
                   </Tr>
@@ -144,7 +198,7 @@ const CartPage = () => {
                   <Th color="white">To convert</Th>
                   <Th color="white">into</Th>
                   <Th>Cart Subtotal:</Th>
-                  <Th>$573.99</Th>
+                  <Th>${TotalPrice}</Th>
                 </Tr>
               </Tfoot>
             </Table>
@@ -165,9 +219,7 @@ const CartPage = () => {
               CONTINUE SHOPPING
             </Button>
             <Button
-              onClick={() => {
-                navigate("/checkout");
-              }}
+              onClick={setTotalAmount}
               fontWeight="400"
               color="white"
               backgroundColor="#333333"
@@ -181,7 +233,7 @@ const CartPage = () => {
           </Flex>
         </Box>
       </Box>
-      <Footer/>
+      <Footer />
     </Box>
   );
 };

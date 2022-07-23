@@ -7,6 +7,8 @@ const ProductWithStar = ({
   off,
   id,
   price,
+  count,
+  subTotal,
   handleAddCartData,
 }) => {
   return (
@@ -23,7 +25,17 @@ const ProductWithStar = ({
       </Box>
       <Box height="10%">
         <Button
-          onClick={() => handleAddCartData(image, text, off, Number(price), id)}
+          onClick={() =>
+            handleAddCartData(
+              image,
+              text,
+              off,
+              Number(price),
+              id,
+              count,
+              subTotal
+            )
+          }
           _hover={{ backgroundColor: "none" }}
           width="100%"
           borderRadius="none"
