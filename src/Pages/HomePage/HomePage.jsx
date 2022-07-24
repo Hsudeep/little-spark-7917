@@ -357,7 +357,7 @@ const HomePage = () => {
         {/* Homepage Trending  Now at bottom START */}
         <Box padding="10px 10px">
           <Heading marginBottom="10px" textAlign="center">
-            Trednding Now
+            Trending Now
           </Heading>
 
           <Flex gap="20px">

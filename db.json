@@ -389,7 +389,7 @@
       "productName": "SkinCeuticals C E Ferulic with 15% L-Ascorbic Acid Vitamin C Serum 30ml",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 4.39,
-      "productPrice": "$169.00",
+      "productPrice": 169,
       "id": 49
     },
     {
@@ -397,7 +397,7 @@
       "productName": "EltaMD UV Clear Tinted Broad-Spectrum SPF46",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 4.22,
-      "productPrice": "$41.00",
+      "productPrice": 41,
       "id": 50
     },
     {
@@ -405,7 +405,7 @@
       "productName": "The Ordinary Niacinamide 10% + Zinc 1% 30ml",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 4.44,
-      "productPrice": "$6.50",
+      "productPrice": 6.5,
       "id": 51
     },
     {
@@ -413,7 +413,7 @@
       "productName": "First Aid Beauty Ultra Repair Cream (6 oz.)",
       "productOffer": "$16 First Aid Beauty Gift",
       "productRating": 4.55,
-      "productPrice": "$38.00",
+      "productPrice": 38,
       "id": 52
     },
     {
@@ -421,7 +421,7 @@
       "productName": "BABOR Ampoule Hydra Plus 7 x 2ml",
       "productOffer": "$30 BABOR Gift",
       "productRating": 5,
-      "productPrice": "$29.95",
+      "productPrice": 29.95,
       "id": 53
     },
     {
@@ -429,7 +429,7 @@
       "productName": "SkinMedica TNS Advanced+ Serum 1oz",
       "productOffer": "10% off SkinMedica + $14 Gift",
       "productRating": 4.6,
-      "productPrice": "$265.50",
+      "productPrice": 265.5,
       "id": 54
     },
     {
@@ -437,7 +437,7 @@
       "productName": "SkinCeuticals Triple Lipid Restore 2:4:2",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 4.38,
-      "productPrice": "$136.00",
+      "productPrice": 136,
       "id": 55
     },
     {
@@ -445,7 +445,7 @@
       "productName": "Embryolisse Lait Crème Concentré 2.54 fl. oz",
       "productOffer": "15% off with code SS15 + Gift",
       "productRating": 5,
-      "productPrice": "$29.00",
+      "productPrice": 29,
       "id": 56
     },
     {
@@ -453,7 +453,7 @@
       "productName": "Obagi Medical Professional-C Serum 20% Strength",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 4.73,
-      "productPrice": "$136.99",
+      "productPrice": 136.99,
       "id": 57
     },
     {
@@ -461,7 +461,7 @@
       "productName": "iS Clinical Pro-Heal Serum Advance Plus 1oz",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 5,
-      "productPrice": "$158.00",
+      "productPrice": 158,
       "id": 58
     },
     {
@@ -469,7 +469,7 @@
       "productName": "Neocutis Lumière Firm Illuminating and Tightening Eye Cream 15ml",
       "productOffer": "15% off with code SS15 + Gift",
       "productRating": 5,
-      "productPrice": "$108.00",
+      "productPrice": 108,
       "id": 59
     },
     {
@@ -477,7 +477,7 @@
       "productName": "DHC Silky Cotton Cosmetic Pads (80 Pack)",
       "productOffer": "DHC Gift",
       "productRating": 5,
-      "productPrice": "$6.00",
+      "productPrice": 6,
       "id": 60
     },
     {
@@ -485,7 +485,7 @@
       "productName": "Colorescience Sunforgettable Total Protection Face Shield SPF50 (PA+++) 55ml",
       "productOffer": "Colorescience Gift",
       "productRating": 4.25,
-      "productPrice": "$42.00",
+      "productPrice": 42,
       "id": 61
     },
     {
@@ -493,7 +493,7 @@
       "productName": "Bioderma Sensibio Micellar Water 500ML",
       "productOffer": "15% off with code SS15 + Gift",
       "productRating": 5,
-      "productPrice": "$18.99",
+      "productPrice": 18.99,
       "id": 62
     },
     {
@@ -501,7 +501,7 @@
       "productName": "La Roche-Posay Pure Vitamin C Face Serum with Salicylic Acid",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 2.67,
-      "productPrice": "$39.99",
+      "productPrice": 39.99,
       "id": 63
     },
     {
@@ -509,7 +509,7 @@
       "productName": "Elemis Pro-Collagen Cleansing Balm 100g",
       "productOffer": "$75 Elemis Gift",
       "productRating": 5,
-      "productPrice": "$66.00",
+      "productPrice": 66,
       "id": 64
     },
     {
@@ -517,7 +517,7 @@
       "productName": "NuFACE® MINI Starter Kit",
       "productOffer": "SHOP ALL NUFACE",
       "productRating": 4.21,
-      "productPrice": "$209.00",
+      "productPrice": 209,
       "id": 65
     },
     {
@@ -525,7 +525,7 @@
       "productName": "PIXI DetoxifEYE Eye Patches",
       "productOffer": "15% off with code SS15 + Gift",
       "productRating": 5,
-      "productPrice": "$24.00",
+      "productPrice": 24,
       "id": 66
     },
     {
@@ -533,7 +533,7 @@
       "productName": "PCA SKIN Hyaluronic Acid Boosting Serum",
       "productOffer": "$40 PCA Skin Gift",
       "productRating": 4.86,
-      "productPrice": "$120.00",
+      "productPrice": 120,
       "id": 67
     },
     {
@@ -541,7 +541,7 @@
       "productName": "Dr. Dennis Gross Skincare Alpha Beta Extra Strength Daily Peel (Pack of 60)",
       "productOffer": "Dr Dennis Gross Gift",
       "productRating": 5,
-      "productPrice": "$150.00",
+      "productPrice": 150,
       "id": 68
     },
     {
@@ -549,7 +549,7 @@
       "productName": "Wander Beauty Baggage Claim Eye Masks (Pack of 6) - Gold",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 4.8,
-      "productPrice": "$26.00",
+      "productPrice": 26,
       "id": 69
     },
     {
@@ -557,7 +557,7 @@
       "productName": "Obagi Medical Nu-Derm Toner (Worth $43.00)",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 4.88,
-      "productPrice": "$43.00",
+      "productPrice": 43,
       "id": 70
     },
     {
@@ -565,7 +565,7 @@
       "productName": "La Roche-Posay Anthelios 50 Mineral Sunscreen Tinted for Face, Ultra-Light Fluid SPF 50 with Antioxidants, 1.7 Fl. Oz.",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 4.2,
-      "productPrice": "$34.99",
+      "productPrice": 34.99,
       "id": 71
     },
     {
@@ -573,7 +573,7 @@
       "productName": "DHC Deep Cleansing Oil (Various Sizes)",
       "productOffer": "DHC Gift",
       "productRating": 5,
-      "productPrice": "",
+      "productPrice": 34.99,
       "id": 72
     },
     {
@@ -581,7 +581,7 @@
       "productName": "Medik8 Advanced Night Ceramide Cream 48g",
       "productOffer": "Medik8 Gift",
       "productRating": 5,
-      "productPrice": "$72.00",
+      "productPrice": 72,
       "id": 73
     },
     {
@@ -589,7 +589,7 @@
       "productName": "DHC Deep Cleansing Oil Medium 4.1 fl. oz.",
       "productOffer": "DHC Gift",
       "productRating": "",
-      "productPrice": "$21.00",
+      "productPrice": 21,
       "id": 74
     },
     {
@@ -597,7 +597,7 @@
       "productName": "The Ordinary Hyaluronic Acid 2% + B5 Hydration Support Formula 30ml",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 4.5,
-      "productPrice": "$7.50",
+      "productPrice": 7.5,
       "id": 75
     },
     {
@@ -605,7 +605,7 @@
       "productName": "The Ordinary Azelaic Acid Suspension 10% 30ml",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 4.44,
-      "productPrice": "$10.00",
+      "productPrice": 10,
       "id": 76
     },
     {
@@ -613,7 +613,7 @@
       "productName": "The Ordinary Caffeine Solution 5% + EGCG 30ml",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 4.55,
-      "productPrice": "$7.50",
+      "productPrice": 7.5,
       "id": 77
     },
     {
@@ -621,7 +621,7 @@
       "productName": "SkinCeuticals Hydrating B5 Hyaluronic Acid Gel Moisturizer 30ml",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 4.71,
-      "productPrice": "$86.00",
+      "productPrice": 86,
       "id": 78
     },
     {
@@ -629,7 +629,7 @@
       "productName": "SkinCeuticals Phyto+ 30ml",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 3.63,
-      "productPrice": "$87.00",
+      "productPrice": 87,
       "id": 79
     },
     {
@@ -637,7 +637,7 @@
       "productName": "EltaMD UV Clear SPF46 Broad-Spectrum Duo (Worth $72)",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 4.38,
-      "productPrice": "$70.00",
+      "productPrice": 70,
       "id": 80
     },
     {
@@ -645,7 +645,7 @@
       "productName": "EltaMD UV Clear Broad-Spectrum SPF46",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 4.59,
-      "productPrice": "$39.00",
+      "productPrice": 39,
       "id": 81
     },
     {
@@ -653,7 +653,7 @@
       "productName": "SkinCeuticals Phyto Corrective Gel 30ml",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 4,
-      "productPrice": "$70.00",
+      "productPrice": 70,
       "id": 82
     },
     {
@@ -661,7 +661,7 @@
       "productName": "SkinCeuticals Hyaluronic Acid Intensifier Hydrating Serum 1 fl. oz",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 4,
-      "productPrice": "$106.00",
+      "productPrice": 106,
       "id": 83
     },
     {
@@ -669,7 +669,7 @@
       "productName": "SkinCeuticals A.G.E. Interrupter",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 4.5,
-      "productPrice": "$168.00",
+      "productPrice": 168,
       "id": 84
     },
     {
@@ -677,7 +677,7 @@
       "productName": "EltaMD UV Daily Broad-Spectrum SPF40",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 3.67,
-      "productPrice": "$32.50",
+      "productPrice": 32.5,
       "id": 85
     },
     {
@@ -685,7 +685,7 @@
       "productName": "SkinCeuticals Anti-aging Skin Care Routine (Worth $481.00)",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 3.86,
-      "productPrice": "$345.00",
+      "productPrice": 345,
       "id": 86
     },
     {
@@ -693,7 +693,7 @@
       "productName": "SkinCeuticals A.G.E. Eye Complex for Dark Circles 15g",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 4.38,
-      "productPrice": "$105.00",
+      "productPrice": 105,
       "id": 87
     },
     {
@@ -701,7 +701,7 @@
       "productName": "iS Clinical Cleansing Complex",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 5,
-      "productPrice": "$45.00",
+      "productPrice": 45,
       "id": 88
     },
     {
@@ -709,7 +709,7 @@
       "productName": "SkinCeuticals LHA Cleansing Gel 8 fl. oz",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 5,
-      "productPrice": "$42.00",
+      "productPrice": 42,
       "id": 89
     },
     {
@@ -717,7 +717,7 @@
       "productName": "Elta MD Foaming Facial Cleanser Duo (Worth $61.00)",
       "productOffer": "12-Piece Beauty Bag (Worth $104) @ $150",
       "productRating": 5,
-      "productPrice": "$58.00",
+      "productPrice": 58,
       "id": 90
     },
     {
@@ -725,7 +725,7 @@
       "productName": "SkinCeuticals Phloretin CF with Ferulic Acid Vitamin C Serum 30ml",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 4.1,
-      "productPrice": "$169.00",
+      "productPrice": 169,
       "id": 91
     },
     {
@@ -733,7 +733,7 @@
       "productName": "SkinCeuticals Plump and Glow Regimen",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 4.25,
-      "productPrice": "$268.00",
+      "productPrice": 268,
       "id": 92
     },
     {
@@ -741,7 +741,7 @@
       "productName": "SkinCeuticals Discoloration Defense Dark Spot Serum 30ml",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 2.6,
-      "productPrice": "$102.00",
+      "productPrice": 102,
       "id": 93
     },
     {
@@ -749,7 +749,7 @@
       "productName": "Neocutis Lumière Firm Riche Extra Moisturizing Illuminating and Tightening Eye Cream 15ml",
       "productOffer": "15% off with code SS15 + Gift",
       "productRating": 4.5,
-      "productPrice": "$118.00",
+      "productPrice": 118,
       "id": 94
     },
     {
@@ -757,7 +757,7 @@
       "productName": "SkinCeuticals Blemish and Age Defense Serum",
       "productOffer": "SkinCeuticals Gift",
       "productRating": 4.6,
-      "productPrice": "$96.00",
+      "productPrice": 96,
       "id": 95
     },
     {
@@ -765,9 +765,11 @@
       "productName": "SkinCeuticals Phyto A+ Brightening Treatment 1 fl. oz",
       "productOffer": "SkinCeuticals Gift",
       "productRating": "",
-      "productPrice": "$105.00",
+      "productPrice": 105,
       "id": 96
     }
   ],
-  "CartData": []
+  "CartData" : [
+
+  ]
 }
