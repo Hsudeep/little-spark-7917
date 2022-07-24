@@ -51,7 +51,7 @@ const CheckoutPage = () => {
               </Box>
             </Box>
 
-            <Box bgColor="white" width="30%"></Box>
+            {/* <Box bgColor="white" width="30%"></Box> */}
           </Flex>
         </Box>
       </Box>
