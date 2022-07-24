@@ -14,7 +14,7 @@ const SkinCareLeftFilters = () => {
     "Alpha-H (19)",
   ];
   return (
-    <Box borderBottom="1px solid lightgrey"h="5%">
+    <Box borderBottom="1px solid lightgrey">
       <Text
         fontWeight="700"
         fontSize="18px"
